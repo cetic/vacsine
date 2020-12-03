@@ -1,8 +1,6 @@
 # vacsine - Adaptive continuous security orchestration in polymorphous environments
 
-Ensure security of systems based on policies, continuous monitoring, and assessing security (certification) requirements in Cloud-Edge/Fog-IoT network environments.
-
-The VaCSInE tool provides adaptative continuous security orchestration in edge/fog and cloud infrastructures. It relies on Service Function Chaining (SFC) and continuous monitoring to provide dynamic reconfiguration of the infrastructure.
+Vacsine is an open-source security orchestration, automation and response tool that provides adaptive security for distributed systems. It relies on continuous monitoring of Cloud and Edge systems to define, evaluate and apply automated countermeasures such as firewalls, intrusion detection systems, honeypots or quarantining. The automated response is triggered by changes to security requirements, indicators of compromise, incidents and vulnerabilities. The efficiency and speed of countermeasures deployment is evaluated in automatically provisioned sandbox environments that shadow the target Cloud/Edge systems. Those sandboxes provide observability and scalability for the training and maintenance of security response strategies.
 
 Use cases
 -------
