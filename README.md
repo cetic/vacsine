@@ -37,6 +37,8 @@ Requirements
 Architecture
 -------
 
+![](logical.png)
+
 Vacsine is composed of several modules that are deployed in Cloud and Edges infrastructures:
 
 ### Federated Security Controller
@@ -77,3 +79,20 @@ Vacsine is composed of several modules that are deployed in Cloud and Edges infr
 
 * test remediation workflows in a dedicated environment before applying them
 * training of new remediation strategies
+
+### Implementation
+
+![](implementation.png)
+
+The orchestration of the security services is provided by VaCSIne, it is written as Python microservices. The Security Agent orchestrates the deployment and configuration of the security services (firewalls, vulnerability scanners, honeypots, etc.) using [Ansible](https://www.ansible.com/) playbooks and [Helm](https://helm.sh/) charts.
+
+Security services orchestration and execution produce traces that can be monitored. VaCSIne produces logs of the orchestration, for instance when a new service is deployed or reconfigured. Security services will also output traces, for example a vulnerability scan with OpenSCAP will produce execution logs and a vulnerability scan report. [Grafana Loki](https://grafana.com/oss/loki/) provides management and visualisation of the logs and security events in the system.
+
+### Deployment
+
+The software is implemented and deployable as follows:
+
+* A Private Cloud infrastructure managed by the [Proxmox Virtual Environment](https://proxmox.com/en/proxmox-ve) open-source server management platform. [Kubernetes](https://kubernetes.io/) provides container orchestration, clusters are managed using the [Rancher](https://rancher.com/) solution. The cloud is connected to the Edge nodes devices using the [KubeEdge](https://kubeedge.io/) system, which provides container orchestration at the Edge,
+* Edge devices can be composed for example of of SBC's (Single Board Computers), they provide advanced compute capabilities (GPU) for edge security services. 
+ 
+This infrastructure offers scalable on-demand compute resources to support load variations and disruptions. The continuous integration, deployment and assessment processes are supported by the [GitLab](https://gitlab.com) and [Foreman](https://www.theforeman.org/) platforms.
