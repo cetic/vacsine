@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "title": "Rover threat model",
+    "description": "Threat model of a ROS setup, inspired from https://news.aliasrobotics.com/threat-modeling-a-ros-2-robot/"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "banzo"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Security service update",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
