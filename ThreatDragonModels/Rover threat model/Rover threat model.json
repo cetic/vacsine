@@ -29,10 +29,10 @@
               "angle": 0,
               "id": "9d649343-ff52-4e70-bc33-e3cc4b34065f",
               "z": 1,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "title": "Component identity spoofing",
                   "type": "Spoofing"
@@ -40,13 +40,13 @@
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Code Repository"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -110,21 +110,31 @@
               },
               "position": {
                 "x": 394,
-                "y": 457
+                "y": 455
               },
               "angle": 0,
               "id": "7fffa841-aa9e-4a2a-8a3f-03a47d8a80ae",
               "z": 4,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Component identity spoofing",
+                  "type": "Spoofing",
+                  "mitigation": "",
+                  "description": "Artifact repository is compromised, it contains build artifacts that are tampered with (ex. the firewall is backdoored)"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Artifact Storage"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
