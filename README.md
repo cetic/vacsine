@@ -45,6 +45,9 @@ Vacsine is composed of several modules that are deployed in Cloud and Edges infr
 
 * management of the security remediation on the target system
 * consolidated view of the remediations history and states across the various edges and clouds
+
+### Security policies
+
 * registry of the **security policies** of the system
 
 ### Remediation registry
