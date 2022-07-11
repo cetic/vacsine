@@ -9,7 +9,7 @@ Use cases
 -------
 
 1. Enforce security policies on cloud/edge infrastructures based on certification criteria
-2. Continuous security self-assessment
+2. Continuous security self-assessment based on DevSecOps practices
 
 Requirements
 -------
