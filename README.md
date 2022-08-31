@@ -1,9 +1,11 @@
 # vacsine 
 
-Adaptive continuous security orchestration in polymorphous environments
+Adaptive continuous security orchestration for Cloud/Edge
 ----------
 
-Vacsine is an open-source security orchestration, automation and response tool that provides adaptive security for distributed systems. It relies on continuous monitoring of Cloud and Edge systems to define, evaluate and apply automated countermeasures such as firewalls, intrusion detection systems, honeypots or quarantining. The automated response is triggered by changes to security requirements, indicators of compromise, incidents and vulnerabilities. The efficiency and speed of countermeasures deployment is evaluated in automatically provisioned sandbox environments that shadow the target Cloud/Edge systems. Those sandboxes provide observability and scalability for the training and maintenance of security response strategies.
+With the growing complexity of critical distributed systems, protection needs to be designed but also managed during its operation. Given the complexity of such interconnected systems, protection needs to be orchestrated and automated. Security Orchestration, Automation and Response (SOAR) is a popular approach to maintain the level of protection during operation.
+
+Vacsine is an open-source SOAR tool that provides adaptive security for distributed systems. It relies on continuous monitoring of Cloud and Edge systems to define, evaluate and apply automated countermeasures such as firewalls, intrusion detection systems, honeypots or quarantining. The automated response is triggered by changes to security requirements, indicators of compromise, incidents and vulnerabilities. The efficiency and speed of countermeasures deployment is evaluated in automatically provisioned sandbox environments that shadow the target Cloud/Edge systems. Those sandboxes provide observability and scalability for the training and maintenance of security response strategies.
 
 Use cases
 -------
